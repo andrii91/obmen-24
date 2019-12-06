@@ -1,0 +1,17 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+    @import '../mobile';
+  	& {
+      .one_reviews {
+            max-width: 48%;
+        text-align: left;
+        &:nth-child(odd) {
+          margin-right: 1%;
+        }
+      }
+      .many_reviews_ins {
+        text-align: center;
+      }
+	}
+}
